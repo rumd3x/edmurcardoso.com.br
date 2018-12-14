@@ -1,7 +1,3 @@
-# edmurcardoso.com.br
-
 <h1 align="center">Edmur Cardoso</h1>
-<h6 align="center">My personal website</h6>
-<p align="center">
-    ![Site preview](/docs/images/thumb.png)
-</p>
+<h4 align="center">My personal website</h4>
+![Site preview](docs/images/thumb.png){ style="display: block; margin: 0 auto;" }
