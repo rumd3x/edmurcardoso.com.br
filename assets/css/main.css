@@ -1,0 +1,382 @@
+body {
+    background:#43cea2;
+    background:-webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background:linear-gradient(to right, #185a9d, #43cea2);
+    
+    font-family:'Source Sans Pro', sans-serif 
+}
+body.light{
+    background: linear-gradient(110deg, #e6e6e6 60%, #a8a8a8 60%);
+}
+body.light .profileList li .social-icon{
+    color:#2540d6 !important;
+    margin-right:10px;
+    background:transparent !important 
+}
+body.dark{
+    background:#485563;
+    background:-webkit-linear-gradient(to right, #29323c, #485563);
+    background:linear-gradient(to right, #29323c, #485563);
+}
+body.edmur {
+    background: linear-gradient(110deg, #585858 60%, #3d3d3d 60%);
+}
+body.dark .userHero{
+   background:rgba(0,0,0,0.25);
+   box-shadow:none
+}
+body.dark .userHero .userDetails h1{
+   color:#FFF
+}
+body.dark .userHero .userDetails h2{
+   color:rgba(255,255,255,0.55)
+}
+body.dark .profileList li .social-icon{
+   background:#112842 !important
+}
+body.blue{
+   background:#00c6ff;
+   background:-webkit-linear-gradient(to right, #0072ff, #00c6ff);
+   background:linear-gradient(to right, #0072ff, #00c6ff)
+}
+body.blue .userHero{
+   background:#cff2ff
+}
+body.blue .userHero .userDetails h1{
+   color:#164275
+}
+body.blue .userHero .userDetails h2{
+   color:rgba(22,67,117,0.8)
+}
+body.blue .profileList li .social-icon{
+   background:#006cef !important;
+   color:#FFF
+}
+body.plumb{
+   background:#f857a6;
+   background:-webkit-linear-gradient(to right, #ff5858, #f857a6);
+   background:linear-gradient(to right, #ff5858, #f857a6)
+}
+body.plumb .userHero{
+   background:#ffbfce;
+   box-shadow:none
+}
+body.plumb .userHero .userDetails h1{
+   color:#8c194b
+}
+body.plumb .userHero .userDetails h2{
+   color:rgba(160,31,86,0.87)
+}
+body.plumb .profileList li .social-icon{
+   background:#ea2e63 !important;
+   color:#FFF
+}
+body.kyoto{
+   background:#c21500;
+   background:-webkit-linear-gradient(to right, #ffc500, #c21500);
+   background:linear-gradient(to right, #ffc500, #c21500)
+}
+body.kyoto .profileList li .social-icon{
+   margin-right:10px;
+   background:#fff !important;
+   color:#d14403 !important
+}
+.themes{
+   position:absolute;
+   top:0;
+   left:0;
+   margin:0;
+   background:#FFF;
+   list-style:none;
+   padding:0;
+   border-radius:0 0 4px 0px;
+   width:180px;
+   box-shadow:0 1px 4px 0 rgba(0,0,0,0.15);
+   padding:10px 0
+}
+.themes li{
+   display:block;
+   margin:0;
+   padding:0;
+   font-size:14px;
+   color:rgba(0,0,0,0.55);
+   margin-bottom:5px;
+   padding:4px 10px
+}
+.themes li:hover{
+   background:#e5e5e5
+}
+.themes li.title{
+   border-radius:0;
+   font-weight:600;
+   background:#FFF
+}
+.themes li button{
+   background:transparent;
+   border:none;
+   padding:0;
+   margin:0;
+   width:100%;
+   font-size:14px;
+   text-align:left;
+   font-weight:700;
+   color:rgba(0,0,0,0.7)
+}
+.themes li button:active{
+   outline:none
+}
+.themes li button:focus{
+   outline:none
+}
+@media screen and (max-width: 968px){
+   .themes{
+       display:none
+   }
+}
+.wrapper{
+   display:block;
+   margin:5px
+}
+@media screen and (min-width: 968px){
+   .wrapper{
+       margin-top:10%;
+       margin-left:auto;
+       margin-right:auto;
+       max-width:540px
+   }
+}
+
+.userHero{
+   height:120px;
+   padding:10px;
+   margin-bottom:10px;
+   background:#FFF;
+   border-radius:4px;
+   box-shadow:0 1px 4px 0 rgba(0,0,0,0.15)
+}
+
+@media screen and (max-width: 381px){
+    .userHero{
+        height: 200px;
+    }
+}
+
+.userHero .avatar{
+   float:left;
+   height:100%;
+   width:100px;
+   background-size:cover !important;
+   border-radius:4px
+}
+
+@media screen and (max-width: 381px){
+    .userHero .avatar{
+        float: none;
+        margin: 0 auto;
+        height: 55%;
+    }
+}
+
+.userHero .userDetails{
+   float:left;
+   margin-top:28px;
+   margin-left:20px
+}
+@media screen and (max-width: 381px){
+    .userHero .userDetails{
+        float: none;
+        margin-left: initial;
+    }
+ }
+@media screen and (min-width: 968px){
+   .userHero .userDetails{
+       float:left;
+       margin-top:25px;
+       margin-left:30px
+   }
+}
+
+.userHero .userDetails h1{
+   margin-bottom:2px;
+   font-size:1.13em;
+   color:#12223A;
+   font-weight:700;
+   letter-spacing:0.05px
+}
+@media screen and (max-width: 381px){
+    .userHero .userDetails h1{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+ }
+@media screen and (min-width: 968px){
+   .userHero .userDetails h1{
+       font-size:1.33em;
+   }
+}
+
+.userHero .userDetails h2{
+   font-size:14px;
+   color:#6D757B;
+   letter-spacing:0.04px
+}
+@media screen and (max-width: 381px){
+    .userHero .userDetails h2{
+        font-size:16px;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+ }
+@media screen and (min-width: 968px){
+   .userHero .userDetails h2{
+       font-size:16px;
+   }
+}
+
+
+.profileList{
+   list-style:none;
+   margin:0 auto;
+   padding:0;
+   box-shadow:0 1px 4px 0 rgba(0,0,0,0.15)
+}
+@media screen and (min-width: 968px){
+   .profileList{
+       display:-webkit-flex;
+       display:-moz-flex;
+       display:-ms-flex;
+       display:-o-flex;
+       display:flex;
+       flex-wrap:wrap;
+       justify-content:space-between;
+       background:#FFF;
+       border-radius:4px
+   }
+}
+.profileList li{
+   position:relative;
+   cursor:pointer;
+   display:flex;
+   flex-direction:row;
+   align-items:center;
+   height:80px;
+   background-color:#fff;
+   background-image:url(../img/icons/chevron_right.svg);
+   background-position:calc(100% - 20px) 50%;
+   background-repeat:no-repeat;
+   border-bottom:1px solid #e5e5e5;
+   border-radius:0
+}
+.profileList li:hover{
+   background-color:#fbfbfb
+}
+.profileList li:first-child{
+   border-radius:4px 4px 0 0
+}
+.profileList li:last-child{
+   border-bottom:none;
+   border-radius:0 0 4px 4px
+}
+@media screen and (min-width: 968px){
+   .profileList li{
+       background-color:transparent;
+       flex-basis:50%
+   }
+   .profileList li:nth-child(odd){
+       border-right:1px solid #e5e5e5
+   }
+   .profileList li:first-child{
+       border-radius:4px 0 0 0
+   }
+   .profileList li:nth-child(2){
+       border-radius:0 4px 0 0
+   }
+   .profileList li:nth-last-of-type(-n+2){
+       border-bottom:none
+   }
+}
+.profileList li .link_overlay{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   z-index:1
+}
+.profileList li .social-icon{
+   width:60px;
+   height:60px;
+   margin-left:10px;
+   border-radius:4px;
+   margin-right:20px;
+   background-repeat:no-repeat !important;
+   background-position:50% 50% !important;
+   background:#fafafa;
+   line-height:60px;
+   text-align:center
+}
+.profileList li .social-icon i{
+   line-height:60px;
+   font-size:32px
+}
+.profileList li .social-icon#github{
+    background:#000;
+    color:#FFF
+ }
+.profileList li .social-icon#instagram{
+   background:#E4405F;
+   color:#FFF
+}
+.profileList li .social-icon#facebook{
+   background:#3B5998;
+   color:#FFF
+}
+.profileList li .social-icon#twitter{
+   background:#1DA1F2;
+   color:#FFF
+}
+.profileList li .social-icon#snapchat{
+   background:#252525;
+   color:#FFF
+}
+.profileList li .social-icon#youtube{
+   background:#CD201F;
+   color:#fff
+}
+.profileList li .social-icon#pinterest{
+   background:#bd081c;
+   color:#fff
+}
+.profileList li .social-icon#linkedin{
+   background:#0077b5;
+   color:#FFF
+}
+.profileList li .social-icon#angel{
+   background:#000;
+   color:#FFF
+}
+.profileList li .social-icon#dribbble{
+   background:#ea4c89;
+   color:#FFF
+}
+.profileList li .social-icon#mail{
+   background:#1f4556;
+   color:#FFF
+}
+.profileList li .social-icon#whatsapp{
+    background:#189d0e;
+    color:#FFF
+ }
+.profileList li h4{
+   font-size:1.13em;
+   font-weight:600;
+   margin:0 0 0px 0;
+   color:#213844
+}
+.profileList li p{
+   font-size:14px;
+   color:#6D757B;
+   margin:0
+}
