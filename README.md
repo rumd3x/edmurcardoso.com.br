@@ -3,5 +3,3 @@
 <p align="center">
     <img src="https://github.com/rumd3x/edmurcardoso.com.br/raw/master/docs/images/thumb.png">
 </p>
-
-teste
