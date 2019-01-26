@@ -98,6 +98,7 @@ final class Core
                 (new TextResponse($th->getMessage()))->withStatus($th->getCode());
                 throw $th;
             }
+            (new TextResponse(''))->withStatus($th->getCode());
         }
     }
 }
