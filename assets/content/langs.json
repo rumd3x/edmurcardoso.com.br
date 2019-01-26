@@ -1,0 +1,14 @@
+[
+    {
+        "id": "pt-br",
+        "name": "Portugu?s brasileiro",
+        "flag": "brasil.png",
+        "default": true
+    },
+    {
+        "id": "en",
+        "name": "English",
+        "flag": "usa.png",
+        "default": false
+    }
+]

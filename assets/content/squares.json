@@ -1,0 +1,44 @@
+[
+    {
+        "link": "https://www.linkedin.com/in/edmurc/",
+        "color": "linkedin",
+        "icon": "fa-linkedin",
+        "title": "LinkedIn",
+        "text": "/edmurc"
+    },
+    {
+        "link": "https://github.com/rumd3x",
+        "color": "github",
+        "icon": "fa-github",
+        "title": "GitHub",
+        "text": "/rumd3x"
+    },
+    {
+        "link": "https://facebook.com/edmurc",
+        "color": "facebook",
+        "icon": "fa-facebook-official",
+        "title": "Facebook",
+        "text": "/edmurc"
+    },
+    {
+        "link": "https://youtube.com/rumd3x",
+        "color": "youtube",
+        "icon": "fa-youtube-play",
+        "title": "Youtube",
+        "text": "/rumd3x"
+    },
+    {
+        "link": "mailto:edmurcardoso@gmail.com",
+        "color": "mail",
+        "icon": "fa-envelope",
+        "title": "E-mail",
+        "text": "edmurcardoso@gmail.com"
+    },
+    {
+        "link": "http://api.whatsapp.com/send?1=pt_BR&phone=5511973270051",
+        "color": "whatsapp",
+        "icon": "fa-whatsapp",
+        "title": "WhatsApp",
+        "text": "+55 (11) 97327-0051"
+    }
+]

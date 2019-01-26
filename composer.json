@@ -1,0 +1,26 @@
+{
+    "name": "rumd3x/easy-mvc",
+    "description": "Easy MVC PHP app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rumd3x",
+            "email": "edmurcardoso@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "nabil1337/case-helper": "^0.1.0",
+        "rumd3x/php-baseobject": "^1.0",
+        "tightenco/collect": "^5.7",
+        "symfony/filesystem": "^4.2",
+        "josantonius/url": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyRest\\App\\": "App/",
+            "EasyRest\\System\\": "System/"
+        }
+    }
+}

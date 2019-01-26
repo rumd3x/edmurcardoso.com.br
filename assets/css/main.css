@@ -2,8 +2,8 @@ body {
     background:#43cea2;
     background:-webkit-linear-gradient(to right, #185a9d, #43cea2);
     background:linear-gradient(to right, #185a9d, #43cea2);
-    
-    font-family:'Source Sans Pro', sans-serif 
+
+    font-family:'Source Sans Pro', sans-serif
 }
 body.light{
     background: linear-gradient(110deg, #e6e6e6 60%, #a8a8a8 60%);
@@ -11,7 +11,7 @@ body.light{
 body.light .profileList li .social-icon{
     color:#2540d6 !important;
     margin-right:10px;
-    background:transparent !important 
+    background:transparent !important
 }
 body.dark{
     background:#485563;
@@ -379,4 +379,22 @@ body.kyoto .profileList li .social-icon{
    font-size:14px;
    color:#6D757B;
    margin:0
+}
+.flags {
+   margin: 5px;
+}
+.flags img {
+   margin-left: 5px;
+   border-radius: 20%;
+   opacity: 0.5;
+   transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -webkit-transition: opacity 1s ease-in-out;
+}
+.flags img:hover {
+   opacity: 1.0;
+}
+
+.flags img.selected {
+   border: 2px dotted #b4d6ff;
 }
