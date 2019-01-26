@@ -398,3 +398,27 @@ body.kyoto .profileList li .social-icon{
 .flags img.selected {
    border: 2px dotted #b4d6ff;
 }
+
+.text-center-xs {
+   text-align: center;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+   .text-center-sm {
+       text-align: center;
+   }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+   .text-center-md {
+       text-align: center;
+   }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+   .text-center-lg {
+       text-align: center;
+   }
+}
