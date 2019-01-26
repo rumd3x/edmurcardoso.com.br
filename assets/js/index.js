@@ -19,19 +19,13 @@ $(document).ready(function() {
         languages = response;
         currentLang = languages.filter(lang => lang.default)[0].id;
         language = translate(currentLang);
-
-        setTimeout(() => {
-            $('.flags img').click(function() {
-                translate($(this).data('lang'));
-            });
-        }, 1000);
     });
 
 });
 
 translate = (lang) => {
-    currentLang = lang;
     $.get('lang/'+currentLang, function(response) {
+        currentLang = lang;
         language = response;
     });
 }

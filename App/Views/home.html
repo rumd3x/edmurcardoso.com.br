@@ -9,7 +9,7 @@
 	</head>
 	<body id="background" class="edmur">
 		<div class="flags text-center-sm">
-			<img data-lang="{$lang.id}" beth-class="currentLang == '{$lang.id}' ? 'selected': ''" beth-each="languages => $lang" src="assets/images/flags/{$lang.flag}" alt="{$lang.name}">
+			<img beth-each="languages => $lang" src="assets/images/flags/{$lang.flag}" beth-class="currentLang == '{$lang.id}' ? 'selected': ''" beth-click="translate('{$lang.id}')" alt="{$lang.name}">
 		</div>
 		<div class="wrapper">
 			<div class="contentBox userHero">
