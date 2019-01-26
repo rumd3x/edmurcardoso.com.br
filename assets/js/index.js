@@ -24,7 +24,7 @@ $(document).ready(function() {
 });
 
 translate = (lang) => {
-    $.get('lang/'+currentLang, function(response) {
+    $.get('lang/'+lang, function(response) {
         currentLang = lang;
         language = response;
     });
