@@ -94,8 +94,8 @@ final class Core
             $this->router = $this->getInjector()->inject('Routing\Router');
             $this->router->handle($this->request);
         } catch (Throwable $th) {
-            (new TextResponse($th->getMessage()))->withStatus($th->getCode());
             if ($this->showErrors) {
+                (new TextResponse($th->getMessage()))->withStatus($th->getCode());
                 throw $th;
             }
         }
