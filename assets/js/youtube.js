@@ -3,11 +3,7 @@ var definitions = {
     description: ''
 };
 
-translate = (lang) => {
-    currentLang = lang;
-    setCookie('lastLang', lang);
-    getGeneralDefinitions(currentLang);
-
+getPageDefinitions = (lang) => {
     $.get(lang+'/youtube', function(response) {
         definitions = response;
     });

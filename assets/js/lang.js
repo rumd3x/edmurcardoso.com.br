@@ -17,10 +17,16 @@ $(document).ready(function() {
         }
 
         language = translate(currentLang);
-        getGeneralDefinitions(currentLang);
     });
 
 });
+
+translate = (lang) => {
+    currentLang = lang;
+    setCookie('lastLang', lang);
+    getGeneralDefinitions(currentLang);
+    getPageDefinitions(currentLang);
+}
 
 getGeneralDefinitions = (lang) => {
     $.get(currentLang+'/general', (response) => {

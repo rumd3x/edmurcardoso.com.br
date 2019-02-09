@@ -8,11 +8,7 @@ var currentBox = getCookie('lastBox', 'squares');
 var squares = [];
 var projects = [];
 
-translate = (lang) => {
-    currentLang = lang;
-    setCookie('lastLang', lang);
-    getGeneralDefinitions(currentLang);
-
+getPageDefinitions = (lang) => {
     $.get(lang+'/home', function(response) {
         definitions = response;
     });
