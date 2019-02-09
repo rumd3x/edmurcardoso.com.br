@@ -169,6 +169,10 @@ body.kyoto .profileList li .social-icon{
    height: 50px;
 }
 
+div.div-link {
+   cursor: pointer;
+}
+
 .userHero.small.chevron {
    background-image:url(../images/chevron_right.svg);
    background-position:calc(100% - 10px);
