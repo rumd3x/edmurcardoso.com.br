@@ -1,31 +1,32 @@
-var languages = [];
-var currentLang = '';
-
-var language = {
+var definitions = {
     title: '',
     name: '',
-    job: '',
+    job: ''
 };
 
+var currentBox = getCookie('lastBox', 'squares');
 var squares = [];
+var projects = [];
 
-$(document).ready(function() {
+translate = (lang) => {
+    currentLang = lang;
+    setCookie('lastLang', lang);
+    getGeneralDefinitions(currentLang);
 
-	$.get('squares', (response) => {
+    $.get(lang+'/home', function(response) {
+        definitions = response;
+    });
+
+    $.get(currentLang+'/squares', (response) => {
         squares = response;
     });
 
-    $.get('langs', (response) => {
-        languages = response;
-        currentLang = languages.filter(lang => lang.default)[0].id;
-        language = translate(currentLang);
+    $.get(currentLang+'/projects', (response) => {
+        projects = response;
     });
+}
 
-});
-
-translate = (lang) => {
-    $.get('lang/'+lang, function(response) {
-        currentLang = lang;
-        language = response;
-    });
+changeCurrentBox = (newBox) => {
+    currentBox = newBox;
+    setCookie('lastBox', newBox);
 }

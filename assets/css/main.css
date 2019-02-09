@@ -161,6 +161,30 @@ body.kyoto .profileList li .social-icon{
     }
 }
 
+.userHero.auto-height {
+   height: auto;
+}
+
+.userHero.small {
+   height: 50px;
+}
+
+.userHero.small.chevron {
+   background-image:url(../images/chevron_right.svg);
+   background-position:calc(100% - 10px);
+   background-repeat:no-repeat;
+}
+
+.userHero.small a h5 {
+   color: #000;
+   margin-left 10%;
+   margin-top: 3px;
+}
+
+.userHero.small a {
+   text-decoration: none;
+}
+
 .userHero .avatar{
    float:left;
    height:100%;
@@ -263,11 +287,13 @@ body.kyoto .profileList li .social-icon{
    align-items:center;
    height:80px;
    background-color:#fff;
-   background-image:url(../img/icons/chevron_right.svg);
-   background-position:calc(100% - 20px) 50%;
-   background-repeat:no-repeat;
    border-bottom:1px solid #e5e5e5;
    border-radius:0
+}
+.profileList.chevron li{
+   background-image:url(../images/chevron_right.svg);
+   background-position:calc(100% - 10px) 50%;
+   background-repeat:no-repeat;
 }
 .profileList li:hover{
    background-color:#fbfbfb

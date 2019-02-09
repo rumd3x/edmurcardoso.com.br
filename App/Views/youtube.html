@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Edmur Antonio Cardoso Neto</title>
+		<title>Edmur - Youtube MP3</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -13,55 +13,23 @@
 		</div>
 		<div class="wrapper">
 
-			<!-- My Profile-->
+			<!-- Heading -->
 			<div class="contentBox userHero">
-				<div class="avatar" style="background-image:url('assets/images/edmur.jpg')"></div>
 				<div class="userDetails">
-					<h1>{{ definitions.name }}</h1>
-					<h2>{{ definitions.job }}</h2>
+					<h1>{{ definitions.project }}</h1>
+					<h2>{{ definitions.description }}</h2>
 				</div>
 			</div>
 			<!-- // -->
 
-			<!-- Clickable Labels -->
-			<div beth-show="currentBox === 'squares'" beth-click="changeCurrentBox('projects')" class="contentBox userHero small chevron">
-				<a href="#">
-					<h5>{{ general.myProjects }}</h5>
-				</a>
-			</div>
-
-			<div beth-hide="currentBox === 'squares'" beth-click="changeCurrentBox('squares')" class="contentBox userHero small">
-				<a href="#">
-					<h5><i class="fa fa-arrow-circle-left"></i> &nbsp; {{ general.goBack }}</h5>
-				</a>
+			<!-- Form -->
+			<div class="contentBox userHero">
+				<div class="userDetails">
+					<h5>{{ general.comingSoon }}</h5>
+				</div>
 			</div>
 			<!-- // -->
 
-			<!-- Page Content -->
-			<ul beth-show="currentBox === 'squares'" class="contentBox profileList">
-				<li beth-each="squares => $square">
-					<a href="{$square.link}" class="link_overlay" target="_blank"></a>
-					<div class="social-icon" id="{$square.color}">
-						<i class="fa {$square.icon}" aria-hidden="true"></i>
-					</div>
-					<div class="inner-content">
-						<h4>{ $square.title }</h4>
-						<p>{ $square.text }</p>
-					</div>
-				</li>
-			</ul>
-
-			<ul beth-show="currentBox === 'projects'" class="contentBox profileList chevron">
-				<li beth-each="projects => $project">
-					<a href="{$project.link}" class="link_overlay"></a>
-					<div class="social-icon" id="{$project.color}">
-						<i class="fa {$project.icon}" aria-hidden="true"></i>
-					</div>
-					<div class="inner-content">
-						<p>{ $project.title }</p>
-					</div>
-				</li>
-			</ul>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -69,6 +37,6 @@
 		<script src="assets/js/beth.min.js"></script>
 		<script src="assets/js/cookies.js"></script>
 		<script src="assets/js/lang.js"></script>
-		<script src="assets/js/index.js"></script>
+		<script src="assets/js/youtube.js"></script>
 	</body>
 </html>
