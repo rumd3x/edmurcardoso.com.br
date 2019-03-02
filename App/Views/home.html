@@ -23,22 +23,8 @@
 			</div>
 			<!-- // -->
 
-			<!-- Clickable Labels -->
-			<div beth-show="currentBox === 'squares'" beth-click="changeCurrentBox('projects')" class="contentBox userHero small chevron div-link">
-				<a href="#">
-					<h5>{{ general.myProjects }}</h5>
-				</a>
-			</div>
-
-			<div beth-hide="currentBox === 'squares'" beth-click="changeCurrentBox('squares')" class="contentBox userHero small div-link">
-				<a href="#">
-					<h5><i class="fa fa-arrow-circle-left"></i> &nbsp; {{ general.goBack }}</h5>
-				</a>
-			</div>
-			<!-- // -->
-
 			<!-- Page Content -->
-			<ul beth-show="currentBox === 'squares'" class="contentBox profileList">
+			<ul class="contentBox profileList">
 				<li beth-each="squares => $square">
 					<a href="{$square.link}" class="link_overlay" target="_blank"></a>
 					<div class="social-icon" id="{$square.color}">
@@ -50,18 +36,7 @@
 					</div>
 				</li>
 			</ul>
-
-			<ul beth-show="currentBox === 'projects'" class="contentBox profileList chevron">
-				<li beth-each="projects => $project">
-					<a href="{$project.link}" class="link_overlay"></a>
-					<div class="social-icon" id="{$project.color}">
-						<i class="fa {$project.icon}" aria-hidden="true"></i>
-					</div>
-					<div class="inner-content">
-						<p>{ $project.title }</p>
-					</div>
-				</li>
-			</ul>
+			
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

@@ -11,7 +11,3 @@ new Route(Route::GET, '/:lang:/projects', 'HomeController@getProjects');
 
 new Route(Route::GET, '/langs', 'LanguageController@languagesAvailable');
 new Route(Route::GET, '/:lang:/general', 'LanguageController@getGeneralDefinitions');
-
-new Route(Route::GET, '/youtube', 'YoutubeController@index');
-new Route(Route::GET, '/:lang:/youtube', 'YoutubeController@getLanguageDefinitions');
-new Route(Route::POST, '/youtube/getMP3', 'YoutubeController@getMP3');
