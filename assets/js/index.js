@@ -5,7 +5,6 @@ var definitions = {
 };
 
 var squares = [];
-var projects = [];
 
 getPageDefinitions = (lang) => {
     $.get(lang+'/home', function(response) {
@@ -14,9 +13,5 @@ getPageDefinitions = (lang) => {
 
     $.get(currentLang+'/squares', (response) => {
         squares = response;
-    });
-
-    $.get(currentLang+'/projects', (response) => {
-        projects = response;
     });
 }

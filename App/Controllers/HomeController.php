@@ -30,9 +30,4 @@ class HomeController extends Controller
     {
         return new JsonResponse(json_decode(file_get_contents(__DIR__.'/../../assets/content/'.$language.'/squares.json')));
     }
-
-    public function getProjects(string $language)
-    {
-        return new JsonResponse(json_decode(file_get_contents(__DIR__.'/../../assets/content/'.$language.'/projects.json')));
-    }
 }

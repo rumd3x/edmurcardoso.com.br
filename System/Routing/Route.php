@@ -10,6 +10,7 @@ final class Route
     const POST = "POST";
     const PUT = "PUT";
     const DELETE = "DELETE";
+    const HEAD = "HEAD";
 
     /**
      * @var string
