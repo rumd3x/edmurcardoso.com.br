@@ -398,7 +398,15 @@ div.div-link {
 .profileList li .social-icon#whatsapp{
     background:#189d0e;
     color:#FFF
- }
+}
+.profileList li .social-icon#discord{
+   background:#738ADB;
+   color:#FFF
+}
+.profileList li .social-icon#steam{
+   background: linear-gradient(#000000, #00adee);
+   color:#FFF
+}
 .profileList li h4{
    font-size:1.13em;
    font-weight:600;

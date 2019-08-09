@@ -2,42 +2,56 @@
     {
         "link": "https://www.linkedin.com/in/edmurc/",
         "color": "linkedin",
-        "icon": "fa-linkedin",
+        "icon": "fab fa-linkedin",
         "title": "LinkedIn",
         "text": "/edmurc"
     },
     {
         "link": "https://github.com/rumd3x",
         "color": "github",
-        "icon": "fa-github",
+        "icon": "fab fa-github",
         "title": "GitHub",
         "text": "/rumd3x"
     },
     {
         "link": "https://facebook.com/edmurc",
         "color": "facebook",
-        "icon": "fa-facebook-official",
+        "icon": "fab fa-facebook-f",
         "title": "Facebook",
         "text": "/edmurc"
     },
     {
         "link": "https://youtube.com/rumd3x",
         "color": "youtube",
-        "icon": "fa-youtube-play",
+        "icon": "fab fa-youtube",
         "title": "Youtube",
         "text": "/rumd3x"
     },
     {
+        "link": "https://steamcommunity.com/id/RUMDEX",
+        "color": "steam",
+        "icon": "fab fa-steam-symbol",
+        "title": "Steam",
+        "text": "D3X"
+    },
+    {
+        "link": "#",
+        "color": "discord",
+        "icon": "fab fa-discord",
+        "title": "Discord",
+        "text": "D3X #3598"
+    },
+    {
         "link": "mailto:edmurcardoso@gmail.com",
         "color": "mail",
-        "icon": "fa-envelope",
+        "icon": "fas fa-envelope",
         "title": "E-mail",
         "text": "edmurcardoso@gmail.com"
     },
     {
         "link": "#",
         "color": "whatsapp",
-        "icon": "fa-whatsapp",
+        "icon": "fab fa-whatsapp",
         "title": "WhatsApp",
         "text": "Ask me on social media"
     }
