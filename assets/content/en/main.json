@@ -1,4 +1,5 @@
 {
-    "name": "Edmur Antonio Cardoso Neto",
-    "job": "Software Engineer at Pagseguro."
+    "name": "Edmur Cardoso",
+    "job": "Software Engineer @ Pagseguro",
+    "birthDay": "O:13:\"Carbon\\Carbon\":3:{s:4:\"date\";s:26:\"1997-07-17 00:00:00.000000\";s:13:\"timezone_type\";i:3;s:8:\"timezone\";s:17:\"America\/Sao_Paulo\";}"
 }
