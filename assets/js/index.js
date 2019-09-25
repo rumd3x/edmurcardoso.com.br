@@ -1,17 +1,18 @@
 var definitions = {
     title: '',
     name: '',
-    job: ''
+    job: '',
+    age: 0
 };
 
 var squares = [];
 
 getPageDefinitions = (lang) => {
-    $.get(lang+'/home', function(response) {
+    $.get(lang + '/home', function (response) {
         definitions = response;
     });
 
-    $.get(currentLang+'/squares', (response) => {
+    $.get(currentLang + '/squares', (response) => {
         squares = response;
     });
 }
