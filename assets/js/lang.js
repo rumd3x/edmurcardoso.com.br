@@ -7,7 +7,7 @@ var general = {
 var languages = [];
 var currentLang = getCookie('lastLang', '');
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     $.get('langs', (response) => {
         languages = response;
@@ -24,12 +24,19 @@ $(document).ready(function() {
 translate = (lang) => {
     currentLang = lang;
     setCookie('lastLang', lang);
-    getGeneralDefinitions(currentLang);
-    getPageDefinitions(currentLang);
+
+    let generalPromises = getGeneralDefinitions(currentLang);
+    let pagePromises = getPageDefinitions(currentLang);
+
+    $.when(pagePromises, generalPromises).done(() => {
+        $("#preloader").fadeOut(875);
+    });
 }
 
 getGeneralDefinitions = (lang) => {
-    $.get(currentLang+'/general', (response) => {
+    let response = $.get(lang + '/general', (response) => {
         general = response;
     });
+
+    return [response];
 }
