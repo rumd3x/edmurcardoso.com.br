@@ -28,8 +28,12 @@ translate = (lang) => {
     let generalPromises = getGeneralDefinitions(currentLang);
     let pagePromises = getPageDefinitions(currentLang);
 
-    $.when(pagePromises, generalPromises).done(() => {
-        $("#preloader").fadeOut(875);
+    let promises = [];
+    promises = promises.concat(generalPromises);
+    promises = promises.concat(pagePromises);
+
+    $.when.apply($, promises).then(() => {
+        $("#preloader").fadeOut(500);
     });
 }
 
