@@ -10,11 +10,25 @@
 		integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/loaders.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body id="background" class="edmur">
+
+	<div id="preloader" class="preloader dark">
+		<div class="loader">
+			<div class="ball-scale-multiple">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
 	<div class="flags text-center-sm">
 		<img beth-each="languages => $lang" src="assets/images/flags/{$lang.flag}"
 			beth-class="currentLang === '{$lang.id}' ? 'selected': ''" beth-click="translate('{$lang.id}')"
