@@ -18,6 +18,13 @@
 
 <body id="background" class="edmur">
 
+	<div beth-hide="isCookieBannerClosed" class="banner-cookies">
+		{{ general.cookiesWarn }}
+		<button beth-click="closeCookieBanner()" class="close-cookies">
+			{{ general.agreeButton }}
+		</button>
+	</div>
+
 	<div id="preloader" class="preloader dark">
 		<div class="loader">
 			<div class="ball-scale-multiple">
@@ -93,7 +100,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'UA-143300166-1');
 	</script>
 </body>

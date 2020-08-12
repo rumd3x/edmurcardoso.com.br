@@ -460,6 +460,35 @@ div.preloader .loader {
    margin: -25px 0 0 -25px;
 }
 
+div.banner-cookies {
+   position: fixed;
+   bottom: 10px;
+   left: 1%;
+   width: 98%;
+   background: rgb(78,78,78);
+   background: linear-gradient(180deg, rgba(78,78,78,0.7) 0%, rgba(198,198,198,0.7) 21%, rgba(198,198,198,0.7) 100%);
+   border: 1px solid #000;
+   text-align: center;
+   z-index: 9999;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+.close-cookies {
+   background: rgb(71,110,134);
+   background: linear-gradient(0deg, rgba(71,110,134,1) 0%, rgba(73,98,121,1) 17%, rgba(60,108,147,1) 18%);
+   border: none;
+   margin-left: 15px;
+   padding: 6px;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: rgb(224, 224, 224);
+}
+
+.close-cookies:hover {
+   background: linear-gradient(0deg, rgba(71,110,134,1) 0%, rgba(73,98,121,1) 15%, rgb(72, 113, 146) 35%);
+}
+
 .text-center-xs {
    text-align: center;
 }

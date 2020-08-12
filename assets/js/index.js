@@ -6,6 +6,7 @@ var definitions = {
 };
 
 var squares = [];
+var isCookieBannerClosed = getCookie('cookieBannerAcknowledged', '0');
 
 getPageDefinitions = (lang) => {
     let homeResponse = $.get(lang + '/home', function (response) {
@@ -20,4 +21,9 @@ getPageDefinitions = (lang) => {
         homeResponse,
         squaresResponse
     ];
+}
+
+closeCookieBanner = () => {
+    setCookie('cookieBannerAcknowledged', '1');
+    isCookieBannerClosed = '1';
 }

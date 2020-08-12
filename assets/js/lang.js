@@ -2,6 +2,8 @@ var general = {
     myProjects: "",
     comingSoon: "",
     goBack: "",
+    agreeButton: "",
+    cookiesWarn: ""
 }
 
 var languages = [];
